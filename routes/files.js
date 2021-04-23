@@ -45,7 +45,7 @@ router.post("/", (req, res) => {
 
     const response = await file.save();
     return res.json({
-      file: `${process.env.APP_Base_URL}/files/${response.uuid}`,
+      file: `${process.env.APP_BASE_URL}/files/${response.uuid}`,
     });
 
     // http://localhost:3000/files/3546574356kvfjhcf
